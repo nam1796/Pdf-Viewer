@@ -1,5 +1,5 @@
-import com.vanniktech.maven.publish.AndroidSingleVariantLibrary
-import com.vanniktech.maven.publish.SonatypeHost
+//import com.vanniktech.maven.publish.AndroidSingleVariantLibrary
+//import com.vanniktech.maven.publish.SonatypeHost
 
 plugins {
     id("com.android.library")
@@ -7,7 +7,7 @@ plugins {
     id("org.jetbrains.kotlin.plugin.compose")
     id("kotlin-parcelize")
     id("org.jetbrains.dokka") version "1.9.20"
-    id("com.vanniktech.maven.publish") version "0.28.0"
+    //id("com.vanniktech.maven.publish") version "0.28.0"
 }
 
 android {
@@ -96,7 +96,7 @@ dependencies {
     implementation("com.squareup.okhttp3:okhttp:4.12.0")
 }
 
-mavenPublishing {
+/*mavenPublishing {
     configure(
         AndroidSingleVariantLibrary(
             // the published variant
@@ -135,6 +135,6 @@ mavenPublishing {
             developerConnection.set("scm:git:ssh://github.com/afreakyelf/pdfviewer.git")
             url.set("https://github.com/afreakyelf/pdfviewer")
         }
-    }
+    }*/
 
 }
