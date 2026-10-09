@@ -135,6 +135,6 @@ dependencies {
             developerConnection.set("scm:git:ssh://github.com/afreakyelf/pdfviewer.git")
             url.set("https://github.com/afreakyelf/pdfviewer")
         }
-    }*/
+    }
 
-}
+}*/
