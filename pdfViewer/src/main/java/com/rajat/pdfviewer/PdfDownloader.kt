@@ -198,14 +198,14 @@ class PdfDownloader(
             throw DownloadFailedException("Failed to download PDF, HTTP Status: ${response.code}")
         }
 
-        val contentType = response.header("Content-Type", "")
+        /*val contentType = response.header("Content-Type", "")
         if (!contentType.isNullOrEmpty() && !contentType.contains(
                 "application/pdf",
                 ignoreCase = true
             )
         ) {
             throw InvalidPdfException("Invalid content type received: $contentType. Expected a PDF file.")
-        }
+        }*/
     }
 }
 
